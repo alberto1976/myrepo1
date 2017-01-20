@@ -1,6 +1,3 @@
-# Un gráfico en ggplot2
-install.packages("ggplot2")
-
 # Gráfico ggplot2
 
 library(ggplot2)
