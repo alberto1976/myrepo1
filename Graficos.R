@@ -9,3 +9,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, col = Species)) +
 install.packages("DT")
 library(DT)
 datatable(head(iris,15))
+
+margin.table(iris[1:4], 1)
+diag(c(1:5),5,5)
+     
