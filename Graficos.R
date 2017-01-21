@@ -10,6 +10,8 @@ install.packages("DT")
 library(DT)
 datatable(head(iris,15))
 
-margin.table(iris[1:4], 1)
-diag(c(1:5),5,5)
-     
+# gráfico Box Plot
+
+ggplot(iris, aes(x = Species, y = Sepal.Length)) + geom_boxplot(col = "green", fill = "gray")
+
+
