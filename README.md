@@ -12,3 +12,5 @@ Esta es la quinta línea desde Github
 
 Esta es la sexta línea desde Github
 
+Esta es la septima línea desde Rstudio
+
