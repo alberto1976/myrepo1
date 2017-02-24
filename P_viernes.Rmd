@@ -1,0 +1,80 @@
+---
+title: "Documento de prueba"
+author: "Alberto Rodríguez"
+date: "20 de enero de 2017"
+output:
+  html_document:
+    number_sections: yes
+    #theme: yeti
+    toc: yes
+    toc_float: yes
+  geometry: margin=1in
+  fontsize: 10pt
+  html_notebook:
+    toc: yes
+    toc_float: yes
+  ioslides_presentation: null
+  pdf_document:
+    highlight: kate
+    number_sections: yes
+    toc: yes
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# R Markdown{#Mark}
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+# Slide with Bullets {.tabset}
+
+## Gráfico Base
+
+```{r pressure}
+plot(pressure)
+```
+
+## Gráfico ggplot2
+
+En esta pestaña se presenta un grafico a través del paquete estadístico ggplot2
+
+```{r}
+library(ggplot2)
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, shape = Species, col = Species)) + geom_point(size=3)
+
+```
+
+# Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+# Slide with Plot
+
+A continuación se presentan gráficos con la base t con ggplot2
+
+## con la Base de R
+
+A continuación se presenta un gráfico construido con la base de R ^[Además de los gráficos de la base de R en la actualidad esxiste un número elevado de librerías a través de los cuales se pueden crear gráficos de alta calidad. Entre estas librerías está: ggplot2, googleVis y las que hacen parte de la galería de htmlwidges]. Para una mayor claridad ver la sesión de [Rmarkdown](#Mark)
+
+```{r pressur}
+plot(pressure)
+```
+
+## con ggplot2
+
+```{r}
+
+library(ggplot2)
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, shape = Species, col = Species)) + geom_point(size=3)
+
+```
+
